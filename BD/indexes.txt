@@ -1,0 +1,18 @@
+use infoarriendo;
+
+create index fk_empresa_tipo_index on empresa(
+id
+);
+
+
+create index fk_empresa_propietario_index on empresa(
+cc_propietario
+);
+
+create index fk_empresadeudor_empresa_index on empresa_deudor(
+nick
+);
+
+create index fk_empresadeudor_deudor_index on empresa_deudor(
+cedula
+);
